@@ -1,0 +1,218 @@
+✅ How a Very Good Student Approaches This Assignment
+Think of this project in four layers:
+
+🔵 LAYER 1: Understand the Business First (Before SQL, Before Metabase)
+A strong student does not jump into writing queries.
+
+They first ask:
+“What does a toy retailer care about?”
+
+Typical KPI areas:
+
+Sales performance (daily/weekly/monthly)
+
+Best-selling products
+
+Store performance differences
+
+Profitability (margin analysis)
+
+Inventory levels (overstock, stockout risks)
+
+Seasonal demand patterns
+
+Slow-moving products
+
+👉 This helps you know what insights you’re trying to create before writing any SQL.
+
+🔵 LAYER 2: Understand the Data Structure
+Before creating schema or dashboards, understand:
+
+✔ Products
+– Product name
+– Category
+– Cost
+– Price
+– Profit margin
+
+✔ Stores
+– Store name
+– Location
+– Region
+
+✔ Sales
+– Daily sales
+– Quantity sold
+– Revenue calculation
+
+✔ Inventory
+– Stock levels per store
+– Replenishment needs
+
+A good student draws a simple diagram:
+
+scss
+Copy code
+Products (1) ---- (many) Sales
+Products (1) ---- (many) Inventory
+Stores (1) ---- (many) Sales
+Stores (1) ---- (many) Inventory
+👉 This makes it easy to build your schema.
+
+🔵 LAYER 3: Think Like a Data Engineer (Building Schema)
+Your mindset should be:
+
+Where is the primary key?
+Products → product_id
+Stores → store_id
+Sales → sale_id
+Inventory → inventory_id
+
+Where do foreign keys connect?
+Sales.product_id → Products.product_id
+Sales.store_id → Stores.store_id
+Inventory.product_id → Products.product_id
+Inventory.store_id → Stores.store_id
+
+Is the schema clean?
+
+No duplicate columns
+
+Datatypes correct
+
+Keys well defined
+
+👉 A good schema makes SQL and dashboards easy.
+
+🔵 LAYER 4: Think Like a Data Analyst (SQL + Metabase Insights)
+Here’s how a top student thinks:
+
+✔ SQL Thinking
+Ask yourself:
+
+What insights does the business want?
+
+Which columns are needed?
+
+Which tables do I join?
+
+What aggregation? (SUM, AVG, COUNT)
+
+What time grouping? (day, month, year)
+
+Example mindset (not the answer):
+
+“To get total revenue, I need quantity × price.
+So I must join Sales with Products.”
+
+✔ Metabase Thinking
+A good student plans:
+
+3 dashboards:
+
+Sales Performance Dashboard
+
+Total revenue
+
+Sales trend
+
+Top stores
+
+Best-selling products
+
+Inventory Health Dashboard
+
+Low-stock alerts
+
+Overstock products
+
+Stockout forecast
+
+Profitability Dashboard
+
+Profit per product
+
+Product category margin
+
+Store-level profitability
+
+Interactive features:
+
+Filters for date, store, category
+
+Drill-down cards
+
+Custom SQL for complex KPIs
+
+⭐ WHAT REALLY MATTERS TO COMPLETE THE PROJECT LIKE A PRO
+Here is the checklist of what high-performing students do:
+
+✔ 1. Create a clean schema
+Well-defined PK, FK, sensible datatypes.
+
+✔ 2. Document the schema in a simple diagram
+Nothing fancy — even a text-based diagram is enough.
+
+✔ 3. Write meaningful SQL queries
+Not random queries — business-driven insights.
+
+✔ 4. Use both Custom Questions + SQL in Metabase
+Shows you understand both methods.
+
+✔ 5. Build 2–3 dashboards that tell a story
+A good dashboard:
+
+Has a title
+
+Has 4–8 cards
+
+Uses filters
+
+Tells a business story
+
+✔ 6. Explain insights (even if short)
+Example:
+
+“Store 12 has high sales but low profit due to high discounting.”
+
+This shows analytical thinking — the most important part.
+If I were doing the assignment, I would follow this exact roadmap:
+DAY 1 — Understand Data & Business
+
+Read table columns
+
+Draw schema
+
+Brainstorm KPIs
+
+DAY 2 — Create Database & Schema
+
+Create PK & FK
+
+Insert sample data
+
+Start exploring SQL
+
+DAY 3 — Build SQL Queries
+
+Sales metrics
+
+Profit metrics
+
+Inventory metrics
+
+DAY 4 — Build Metabase Dashboards
+
+Add filters
+
+Organize cards
+
+Make it visual
+
+DAY 5 — Final Touch
+
+Clean design
+
+Brief documentation
+
+Screenshots of dashboards
