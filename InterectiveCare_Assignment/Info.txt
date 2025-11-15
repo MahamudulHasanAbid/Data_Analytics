@@ -1,0 +1,258 @@
+📢 Final Assignment: Metabase Dashboard Project with PostgreSQL (Big Data)
+Dear Learners,
+It’s time for your capstone project! 🎓
+ This final assignment will test your SQL skills, Metabase dashboarding expertise, and your ability to generate insights from real-world retail business data.
+You will be working with the Mexico Toy Sales & Inventory Dataset, which contains products, stores, daily sales, and stock levels for a fictional toy store chain operating across Mexico.
+Let’s turn your learning into a portfolio-ready BI project! 🚀
+
+🔍 Assignment Title:
+Mexico Toy Sales & Inventory Analysis using Metabase
+
+📦 Dataset Description:
+You are provided with four interconnected tables:
+Products
+
+
+Stores
+
+
+Sales
+
+
+Inventory
+
+
+These tables represent a complete retail environment with product information, store metadata, daily sales, and current inventory for each store.
+Your goal is to analyze profitability, demand patterns, stock levels, and store performance.
+
+📚 Database Dictionary
+📁 Products – Toy Product Master
+Field Name
+Description
+Product_ID
+Unique ID of each product
+Product_Name
+Name of the product
+Product_Category
+Category of the product
+Product_Cost
+Cost per unit (USD)
+Product_Price
+Retail price per unit (USD)
+
+
+📁 Stores – Store Metadata
+Field Name
+Description
+Store_ID
+Unique ID of each store
+Store_Name
+Name of the store
+Store_City
+City in Mexico where the store is located
+Store_Location
+Exact location/area in the city
+Store_Open_Date
+Opening date of the store
+
+
+📁 Sales – Daily Store Sales
+Field Name
+Description
+Sale_ID
+Unique ID per sales transaction
+Date
+Date of the transaction
+Store_ID
+Store where the sale occurred
+Product_ID
+Product sold
+Units_Sold
+Quantity sold
+Calendar_Date
+Calendar helper field
+
+
+📁 Inventory – Store Stock Levels
+Field Name
+Description
+Store_ID
+Store ID
+Product_ID
+Product in stock
+Stock_On_Hand
+Current available units
+
+
+🧠 Your Objectives:
+✅ 1. Build the Database Schema
+Design your schema in PostgreSQL and correctly define:
+Primary keys
+
+
+Foreign keys
+
+
+Relationships
+
+
+✅ 2. Connect PostgreSQL to Metabase
+Use Metabase to explore:
+Custom Questions
+
+
+SQL Queries
+
+
+Interactive Dashboards
+
+
+
+📊 Recommended Analysis
+Your dashboard should answer major business questions:
+📌 Profitability
+Which categories drive the most profit?
+
+
+Which products have the highest margin?
+
+
+Which stores generate the most revenue?
+
+
+📌 Store Performance
+Which cities sell the most units?
+
+
+Which stores underperform?
+
+
+📌 Seasonality & Trends
+Monthly or weekly sales trends
+
+
+Products with seasonal spikes
+
+
+📌 Inventory & Stock-Out Risk
+Any store running out of high-demand SKUs?
+
+
+Total value of inventory tied up
+
+
+Products needing urgent restocking
+
+
+
+📧 3. Email Submission (SMTP Requirement)
+You must send your dashboard (Metabase share/export or screenshots) via SMTP to:
+📩 sajibkhan.data@gmail.com
+
+📝 4. Presentation / PDF & Video Recording
+You must create:
+📄 PDF Report (Upload to Classroom)
+Include:
+Schema diagram
+
+
+Dashboard screenshots
+
+
+KPIs and charts
+
+
+Key insights
+
+
+Recommendations
+
+
+🎥 Video Presentation
+Record a short walkthrough video explaining:
+Your dashboard
+
+
+Filters
+
+
+Visuals
+
+
+Top insights
+
+
+➡️ Upload the video in Classroom (or as instructed).
+🔗 LinkedIn Post Requirement
+You MUST:
+Post your dashboard publicly on LinkedIn
+
+
+Include 2–3 visuals
+
+
+Add a short explanation of your insights
+
+
+Use your filter(s) to demonstrate interactivity
+
+
+Tag @Sajib Khan in the post
+
+
+📎 Submit the LinkedIn post link inside the Classroom assignment.
+
+🔐 Database Credentials
+Use your provided database:
+host:aws-0-ap-southeast-1.pooler.supabase.com
+port:5432
+database:postgres
+user:postgres.trpsczfvufgiebtqahsr
+pool_mode:session
+password:mavendatatoy
+
+
+🗓️ Submission Deadline:
+📅 30th November, 2025
+
+✅ WHAT TO SUBMIT (Final Checklist)
+✔ 1. SMTP Email Submission
+Send your final dashboard (screenshot or export)
+ ➡️ To sajibkhan.data@gmail.com
+✔ 2. PDF Report (Upload to Classroom)
+Your PDF must contain:
+Schema diagram
+
+
+Dashboard visuals
+
+
+Key insights & recommendations
+
+
+✔ 3. Video Presentation (Upload to Classroom)
+A short video demonstrating:
+Dashboard functionality
+
+
+Filters working
+
+
+Your insights
+
+
+✔ 4. LinkedIn Post
+Public LinkedIn post with:
+Dashboard visuals
+
+
+Insights summary
+
+
+Working filter demonstration
+
+
+Tag @Sajib Khan
+
+
+➡️ Submit the LinkedIn post link in Classroom.
